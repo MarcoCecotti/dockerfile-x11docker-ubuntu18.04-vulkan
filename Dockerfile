@@ -21,7 +21,7 @@
 #
 # See x11docker --help for further options.
 
-FROM debian:bullseye
+FROM nvidia/vulkan:1.1.121-cuda-10.1-beta.1-ubuntu18.04
 
 RUN apt-get update && \
     env DEBIAN_FRONTEND=noninteractive apt-get install -y \
